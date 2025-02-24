@@ -1,0 +1,14 @@
+# Allow all web crawlers full access
+User-agent: *
+Disallow: 
+
+# Block access to the .git directory and sensitive files
+Disallow: /.git/
+Disallow: /.gitignore
+
+# Example of a future test directory (stubbed in for later use)
+# Disallow: /test-directory/
+
+# Sitemap (if available in the future)
+# Sitemap: https://www.example.com/sitemap.xml
+
