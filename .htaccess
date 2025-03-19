@@ -1,3 +1,9 @@
+RewriteEngine on
+
+RewriteCond %{THE_REQUEST} !/phpmyadmin [NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.html [L]
+
 # Block access to .gitignore file
 <Files ".gitignore">
     Require all denied
