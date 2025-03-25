@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicare for All</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Medicare for All</h1>
+        <p class="lead">Medicare, a successful program for seniors, should be expanded to cover all Americans. The U.S. is unique in not guaranteeing healthcare as a right, despite spending significantly more than other nations with worse outcomes.</p>
+        <hr>
+
+        <p>We are the richest country on earth while millions lack affordable care, leading to unnecessary deaths and financial hardship. Medicare for All will also cover dental, hearing, vision care, and nursing home care.</p>
+
+        <p>A single-payer Medicare for All system would provide comprehensive, cost-effective coverage, eliminating complex private insurance and high drug costs. It would save billions in administrative costs and ensure everyone receives necessary care, ending the worry of medical bankruptcy.</p>
+
+        <p>The current healthcare system is unsustainable, costing trillions and enriching insurance and drug companies. Medicare for All guarantees healthcare as a right, providing peace of mind during crises like the COVID-19 pandemic.</p>
+
+        <p>The U.S. currently spends nearly 18 percent of our GDP on health care – over $10,000 per person. If we continue without change, we will spend an estimated nearly $60 trillion over the next decade on health care. Meanwhile, drug companies and insurance companies make hundreds of billions of dollars in profits each year. That is unaffordable, unsustainable and unacceptable.</p>
+
+        <p>Studies show that our federal government could save up to $500 billion per year on administrative costs by moving to Medicare for All. For more information, read <p>
+    <a href="https://www.sanders.senate.gov/wp-content/uploads/medicare-for-all-2019-financing.pdf" target="_blank" rel="noopener noreferrer">
+        Financing Medicare for All
+    </a>
+</p>
+
+
+        <hr>
+        <p class="text-center">
+            <a href="index.html" class="btn btn-primary">Return to Home Page</a>
+        </p>
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+<script>
+    fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer-placeholder").innerHTML = data;
+        })
+        .catch(error => console.error("Error loading footer:", error));
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
