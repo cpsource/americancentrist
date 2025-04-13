@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Funding Sources | American Centrist</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container py-5">
+    <header class="mb-4">
+      <h1 class="text-center display-4">Funding Sources</h1>
+      <p class="lead text-center">This is how funding breaks down for various AmericanCentrist proposals. As you can see, the wealthy still have a huge chunk of money remaining.</p>
+    </header>
+
+    <section class="mb-5">
+      <table class="table table-bordered table-striped text-center">
+        <thead class="table-dark">
+          <tr>
+            <th>Source / Expense</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>400 Richest Americans (combined wealth)</strong></td>
+            <td><strong>$5.4 trillion</strong></td>
+          </tr>
+          <tr>
+            <td>Medicaid (annual cost)</td>
+            <td class="text-danger">- $880 billion</td>
+          </tr>
+          <tr>
+            <td>Free College Tuition for All (estimated annually)</td>
+            <td class="text-danger">- $993 billion</td>
+          </tr>
+          <tr>
+            <td>Medicare for All</td>
+            <td class="text-danger">- $2,400 billion</td>
+          </tr
+          <tr class="table-success">
+            <td><strong>Remaining Wealth (400 richest Americans)</strong></td>
+            <td><strong>$1.4 trillion</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+        <section class="mb-5">
+	  <hr><p>These numbers are high as one half of Medicaid would be rolled into Medicare for all, and
+	    by cutting waste, fraud, and abuse, we could cut our medical costs in half.
+	    </p>
+	</section>
+	
+    <hr>
+    <p class="text-center">
+      <a href="index.html" class="btn btn-primary">Return to Home Page</a>
+    </p>
+
+    <div id="footer-placeholder"></div>
+    <script>
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        })
+        .catch(error => console.error("Error loading footer:", error));
+    </script>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
