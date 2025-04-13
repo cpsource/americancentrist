@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Medicaid | American Centrist</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container py-5">
+    <header class="mb-5">
+      <h1 class="text-center display-4">Medicaid</h1>
+      <p class="lead text-center">Supporting America's most vulnerable through shared responsibility and compassion.</p>
+    </header>
+
+    <section class="mb-5">
+      <h2>What is Medicaid?</h2>
+      <p>Medicaid is a public health insurance program in the United States that provides coverage for low-income individuals and families. It helps pay for medical services like doctor visits, hospital stays, long-term care, and more. The program is jointly funded by the federal government and individual state governments.</p>
+    </section>
+
+    <section class="mb-5">
+      <h2>How Do You Qualify?</h2>
+      <p>Eligibility for Medicaid depends on several factors, including income level, household size, disability status, and age. While requirements vary by state, the program generally covers:</p>
+      <ul>
+        <li>Low-income adults</li>
+        <li>Children and pregnant women</li>
+        <li>Seniors and people with disabilities</li>
+      </ul>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="text-success">We Must Continue Funding Medicaid</h2>
+      <p>Medicaid is a lifeline for millions of Americans. Preserving and strengthening it is essential to ensuring a fair and functional healthcare system.</p>
+
+      <div class="card border-info">
+        <div class="card-body">
+          <h5 class="card-title">Medicaid Funding & Payments — U.S. Overview</h5>
+
+          <h6>How It's Funded</h6>
+          <p>Medicaid is jointly funded by:</p>
+          <ul>
+            <li><strong>Federal Government</strong> (~60% average)</li>
+            <li><strong>State Governments</strong> (~40%)</li>
+          </ul>
+          <p>Funding ratio depends on the Federal Medical Assistance Percentage (FMAP), ranging from 50% to 83%, based on state income levels.</p>
+
+          <h6>Where the Money Goes</h6>
+          <ul>
+            <li>Low-income adults and families</li>
+            <li>Children’s healthcare</li>
+            <li>Pregnant women</li>
+            <li>People with disabilities</li>
+            <li>Elderly in nursing homes</li>
+          </ul>
+
+          <h6>Top Spending Areas</h6>
+          <ul>
+            <li>Long-term services and supports (LTSS)</li>
+            <li>Acute care (doctor visits, hospital stays)</li>
+            <li>Prescription drugs</li>
+          </ul>
+
+          <h6>Example (FY 2023 Estimates)</h6>
+          <table class="table table-bordered table-striped">
+            <thead class="table-light">
+              <tr>
+                <th>Source</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Federal share</td>
+                <td>$530B</td>
+              </tr>
+              <tr>
+                <td>State share</td>
+                <td>$350B</td>
+              </tr>
+              <tr class="table-success">
+                <td><strong>Total Medicaid</strong></td>
+                <td><strong>$880B</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+    <p class="text-center">
+      <a href="index.html" class="btn btn-primary">Return to Home Page</a>
+    </p>
+
+    <div id="footer-placeholder"></div>
+    <script>
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        })
+        .catch(error => console.error("Error loading footer:", error));
+    </script>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
