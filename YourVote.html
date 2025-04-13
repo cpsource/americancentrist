@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YourVote | American Centrist</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container py-5">
+    <header class="mb-5">
+      <h1 class="text-center display-4">Your Vote Counts</h1>
+      <p class="lead text-center">Empowering citizens to influence government—issue by issue, vote by vote.</p>
+    </header>
+
+    <section class="mb-5">
+      <h2>What is YourVote?</h2>
+      <p>
+        YourVote is a new initiative proposed by the American Centrist movement to give everyday citizens a stronger voice in governance. Instead of only voting every two or four years for candidates, YourVote allows citizens to vote on individual issues throughout the year. It is envisioned as a government-run platform—secure, transparent, and accessible to all eligible voters.
+      </p>
+    </section>
+
+    <section class="mb-5">
+      <h2>How It Works</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Each major issue is presented on the platform with clear <strong>pro</strong> and <strong>con</strong> arguments.</li>
+        <li class="list-group-item">Before voting, users take a brief quiz to confirm a basic understanding of the issue.</li>
+        <li class="list-group-item">Each citizen may cast <strong>one vote per issue</strong>.</li>
+        <li class="list-group-item">Results are visible to all and are sent directly to lawmakers, making the public’s stance unmistakable.</li>
+      </ul>
+    </section>
+
+    <section class="mb-5">
+      <h2>Why It Matters</h2>
+      <p>
+        Washington, D.C., has become an echo chamber where lobbyists speak louder than voters. YourVote is a digital megaphone for the American people. It peels away the influence bubble and brings grassroots opinion to the forefront—issue by issue. By bridging this gap, YourVote ensures that elected officials hear not just lobbyists, but <strong>you</strong>.
+      </p>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="text-primary text-center">Sample Issue: Healthcare for All Americans</h2>
+
+      <div class="row mb-4">
+        <div class="col-md-6">
+          <h4 class="text-danger">Cons</h4>
+          <ul>
+            <li>Potential strain on healthcare infrastructure due to increased demand.</li>
+            <li>Concerns over reduced innovation and longer wait times for procedures.</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h4 class="text-success">Pros</h4>
+          <ul>
+            <li>Longer, healthier lives for all Americans.</li>
+            <li>No cost to individuals—funded entirely by a tax on the billionaire class.</li>
+            <li>Improved economic productivity due to better public health.</li>
+            <li>Reduces medical bankruptcies and financial hardship.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <h5>Quiz</h5>
+        <p><strong>Question:</strong> Who would bear the financial burden for the proposed universal healthcare plan?</p>
+        <ul>
+          <li>A. The middle class</li>
+          <li>B. The billionaire class</li>
+          <li>C. Everyone equally</li>
+        </ul>
+      </div>
+
+      <div class="mb-4">
+        <h5>Vote</h5>
+        <p><strong>Do you support extending Medicare for All paid for by the billionaire class?</strong></p>
+        <button class="btn btn-success me-2">Yes</button>
+        <button class="btn btn-danger">No</button>
+      </div>
+    </section>
+    
+    <hr>
+    <p class="text-center">
+      <a href="index.html" class="btn btn-primary">Return to Home Page</a>
+    </p>
+    
+    <div id="footer-placeholder"></div>
+
+<script>
+    fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer-placeholder").innerHTML = data;
+        })
+        .catch(error => console.error("Error loading footer:", error));
+</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
